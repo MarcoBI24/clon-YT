@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+}
+.contenedor-general{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 300px;
+}
+header, aside, section{
+    border: 1px solid black;
+}
+.contenedor-header{
+    grid-column: 1 / 3;
+}
+.contenedor-aside{
+    grid-row: 2 / 3
+}
