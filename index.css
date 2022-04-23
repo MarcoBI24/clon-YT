@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: ;
 }
 body{
     background: whitesmoke;
@@ -15,9 +16,44 @@ body{
 header, aside, section{
     border: 1px solid black;
 }
+/* comienzo del contenedor header*/
+    
 .contenedor-header{
     grid-column: 1 / 3;
 }
+/* assets */
+
+
+.logo{
+    width: 100px;
+}
+.menu{
+    width: 24px;
+}
+.icon-search{
+    width: 30px;
+}
+.icon-voice{
+    width: 30px;
+}
+.icon-camera{
+    width: 30px;
+}
+.icon-menu-apps{
+    width: 30px;
+
+}
+.icon-notification{
+    width: 30px;
+}
+/* icon-user tiene un conteiner */
+.icon-user{
+    width: 30px;
+}
+
+
+
+
 .contenedor-aside{
     grid-row: 2 / 3
 }
