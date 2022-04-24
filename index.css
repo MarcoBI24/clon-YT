@@ -12,9 +12,7 @@ body{
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
-}
-aside, section{
-    border: 1px solid black;
+    
 }
 /* comienzo del contenedor header*/
     
@@ -46,7 +44,6 @@ aside, section{
         height: 40px;
         gap: 10px;
         background-color: transparent;
-
     }
     .conteiner-search{
         display: flex;
@@ -129,24 +126,36 @@ aside, section{
 .contenedor-aside{
     grid-row: 2 / 3;
     display: flex;
-    justify-content: center;
-    padding-top:  30px;
-    
-}
-.conteiner-nav{
-    border: 1px solid blue;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    justify-content: flex-start;
+    padding-top:  5px;
+}
+/* contenedor nav del aside */
+.conteiner-nav{
+    border: 1px solid rgb(174, 172, 172);
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    
 }
 /* para centrar los iconos  */
 .conteiner-nav div{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    gap: 7px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+.conteiner-nav div:hover{
+    background-color: rgb(203, 203, 203);
+}
+.conteiner-nav div p{
+    font-size: 14px;
 }
 /* assets del aside-nav*/
 .icon-inicio{
@@ -159,12 +168,75 @@ aside, section{
 .icon-shorts{
     width: 24px;
 }
-.icon-{
-    width: 24px;
-}
 .icon-suscripciones{
     width: 24px;
 }
 .icon-biblioteca{
     width: 24px;
+}
+    /*conteiner moreThings del aside */
+.conteiner-moreThings div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+
+}
+.conteiner-moreThings div:hover{
+    background-color: rgb(203, 203, 203);
+}
+.conteiner-moreThings div p{
+    font-size: 14px;
+}
+.icon{
+    width: 24px;
+}
+/* SECTION */
+.contenedor-section{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 306px;
+    grid-auto-rows: 306px;
+    max-height: 800px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.etiquetas{
+    grid-column: 1 / 5;
+    display: flex;
+    padding: 8px;
+    padding-left: 20px;
+    gap: 30px;
+    border: 1px solid;
+    border-color: rgb(203, 203, 203);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    
+}
+.etiquetas p{
+    padding: 10px;
+    border: 1px solid;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: rgb(222, 219, 219);
+    border-color: rgb(174, 172, 172);
+}
+.etiquetas p:hover{
+    background-color: rgb(184, 182, 182);
+}
+.etiquetas p:first-child{
+    background-color: #000;
+    border-color: #000;
+    color: white;
+}
+.contenedor-video{
+    border: 1px solid;
 }
